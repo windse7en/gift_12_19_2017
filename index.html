@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__cryptokitties_co">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style id="stndz-style"></style>
+
+  <title>CryptoKitties | Collect and breed digital cats!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Collect and trade CryptoKitties in one of the world&#39;s first blockchain games. Breed your rarest cats to create the purrfect furry friend. The future is meow!">
+  <meta name="author" content="Axiom Zen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CryptoKitties">
+  <meta name="twitter:title" content="CryptoKitties | Collect and breed digital cats!">
+  <meta name="twitter:description" content="Collect and trade CryptoKitties in one of the world&#39;s first blockchain games. Breed your rarest cats to create the purrfect furry friend. The future is meow!">
+  <meta name="twitter:image" content="https://www.cryptokitties.co/images/share.png">
+  <meta name="twitter:url" content="https://www.cryptokitties.co">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CryptoKitties">
+  <meta property="og:title" content="CryptoKitties | Collect and breed digital cats!">
+  <meta property="og:description" content="Collect and trade CryptoKitties in one of the world&#39;s first blockchain games. Breed your rarest cats to create the purrfect furry friend. The future is meow!">
+  <meta property="og:image" content="https://www.cryptokitties.co/images/share.png">
+  <meta property="og:url" content="https://www.cryptokitties.co">
+  <link rel="shortcut icon" href="https://www.cryptokitties.co/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.cryptokitties.co/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.cryptokitties.co/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.cryptokitties.co/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.cryptokitties.co/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.cryptokitties.co/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.cryptokitties.co/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.cryptokitties.co/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.cryptokitties.co/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.cryptokitties.co/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://www.cryptokitties.co/icons/android-icon-192x192.png">
+  <link href="./gift/index.css" rel="stylesheet">
+  <link href="./gift/custom.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="./gift/data.js"></script>
+  <script src="./gift/init.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <style id="custom_style"></style>
+  <div id="app">
+    <div data-reactroot="" class="App">
+      <div class="Container Container--full">
+        <div class="Header">
+          <a class="Header-home" aria-current="false" href="https://www.cryptokitties.co/">
+            <div class="Header-logoWrapper">
+              <div class="Header-logo"></div>
+            </div>
+            <h1 class="Header-wordmark">CryptoKitties</h1>
+          </a>
+          <div class="Header-networkStatus">
+            <!-- react-empty: 133 -->
+          </div>
+          <nav class="Header-navigation">
+            <input id="search_by_id" type="text" class="InputButtons-input" placeholder="Search Kitties number..." value="" maxlength="200">
+            <button id="search_button" class="Button Button--larger Button--buy" aria-current="false">Search</button>
+            <a class="Header-navigation-item" aria-current="false" href="https://www.cryptokitties.co/marketplace">Marketplace</a>
+          </nav>
+        </div>
+      </div>
+      <main class="Main">
+        <div class="KittyPage">
+          <div class="KittyBanner u-bg-alt-limegreen">
+            <div class="Container Container--full">
+              <div class="KittyBanner-container">
+                <a class="active" aria-current="true" href="https://www.cryptokitties.co/kitty/367257">
+                  <img id="kittyImage" class="KittyBanner-image">
+                </a>
+                <div class="KittyBanner-status">
+                  <div class="KittyStatus KittyStatus--list">
+                    <div class="KittyStatus-item">
+                      <span class="KittyStatus-itemIcon">
+                        <i class="Icon Icon--tag"></i>
+                      </span>
+                      <span class="KittyStatus-itemText">
+                        <!-- react-text: 435 -->For sale
+                        <!-- /react-text -->
+                        <span class="KittyStatus-note" id="kitty_for_sale">
+                          <small>Ξ</small>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="KittyBanner-share">
+                  <img class="KittyBanner-shareBtn" src="./gift/share.svg"
+                    alt="Share me!" role="button">
+                  <!-- react-empty: 442 -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="KittyPage-content">
+            <div class="KittyProfile">
+              <div class="Container Container--sm">
+                <div class="KittySection">
+                  <div class="KittySection-content">
+                    <div class="KittyHeader">
+                      <div class="KittyHeader-main">
+                        <div class="KittyHeader-name">
+                          <h1 class="KittyHeader-name-text" id="kitty_name1"></h1>
+                        </div>
+                        <div class="KittyHeader-details">
+                          <span id="kitty_name2"></span>
+                          <span class="Separator"></span>
+                          <a class="KittyHeader-details-generation" aria-current="false" href="https://www.cryptokitties.co/marketplace/all?search=gen:6">
+                            <span id="kitty_gen"></span>
+                          </a>
+                          <span class="Separator"></span>
+                          <span class="KittyHeader-details-condition">
+                            <!-- react-text: 461 -->Snappy Cooldown
+                            <!-- /react-text -->
+                            <img src="./gift/info.svg" class="KittyHeader-details-conditionInfo">
+                          </span>
+                        </div>
+                      </div>
+                      <div class="KittyHeader-owner">
+                        <a class="KittyHeader-owner-imageLink" aria-current="false" href="https://www.cryptokitties.co/profile/0xc9897f296aaad6d494bee0a4003c5a88a5803aa0">
+                          <div class="KittyHeader-owner-image">
+                            <img src="./gift/profile-14.png">
+                          </div>
+                        </a>
+                        <span class="KittyHeader-owner-details">
+                          <a id="kitty_onwer" class="KittyHeader-owner-name" aria-current="false" href="https://www.cryptokitties.co/profile/0xc9897f296aaad6d494bee0a4003c5a88a5803aa0"></a>
+                          <span>Owner</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="KittySection">
+                  <div class="KittySection-content">
+                    <div>
+                      <div class="KittyBid KittyBid--sale">
+                        <div class="KittyBid-boxes">
+                          <div class="KittyBid-box">
+                            <h3 class="KittyBid-box-title">Buy now price</h3>
+                            <span class="KittyBid-box-subtitle" id="kitty_current_price">
+                              <em>Ξ</em>
+                            </span>
+                          </div>
+                          <div class="KittyBid-box KittyBid-box--secondary">
+                            <h3 class="KittyBid-box-title">Time left</h3>
+                            <span class="KittyBid-box-subtitle">
+                              <!-- react-text: 484 -->1
+                              <!-- /react-text -->
+                              <!-- react-text: 485 -->
+                              <!-- /react-text -->
+                              <!-- react-text: 486 -->day
+                              <!-- /react-text -->
+                            </span>
+                          </div>
+                        </div>
+                        <div class="KittyBid-action">
+                          <a class="Button Button--larger Button--buy" aria-current="false" href="https://www.cryptokitties.co/sign-in">欢迎采购</a>
+                        </div>
+                        <div class="KittyBid-auctionGraph">
+                          <div class="AuctionGraph AuctionGraph--sale">
+                            <svg class="AuctionGraph-chart" viewBox="0 0 720 180">
+                              <defs>
+                                <lineargradient id="grad" x2="0" y2="1">
+                                  <stop offset="0" stop-color="#f5eae2" stop-opacity="0.4"></stop>
+                                  <stop offset="1" stop-color="#fff"></stop>
+                                </lineargradient>
+                              </defs>
+                              <polygon points="5,5 5.848028163580247,5.07371971858467 715,77.85714285714286 715,175 5,175 5,5"
+                                fill="url(#grad)"></polygon>
+                              <rect x="5" y="5" width="710" height="170" fill="none" stroke="#f5eae2" stroke-width="2"></rect>
+                              <line x1="241.66666666666666" x2="241.66666666666666" y1="5" y2="175" stroke="#f5eae2"
+                                stroke-width="2"></line>
+                              <line x1="478.3333333333333" x2="478.3333333333333" y1="5" y2="175" stroke="#f5eae2"
+                                stroke-width="2"></line>
+                              <line x1="5" x2="5.848028163580247" y1="5" y2="5.07371971858467" stroke="#ff9b6a" stroke-width="2"></line>
+                              <line x1="5.848028163580247" x2="715" y1="5.07371971858467" y2="77.85714285714286" stroke="#f5eae2"
+                                stroke-width="2"></line>
+                              <circle cx="715" cy="77.85714285714286" r="5" fill="#f5eae2"></circle>
+                              <circle cx="5.848028163580247" cy="5.07371971858467" r="5" fill="#ff9b6a"></circle>
+                              <circle cx="5" cy="5" r="5" fill="#ff9b6a"></circle>
+                            </svg>
+                            <div class="AuctionGraph-prices">
+                              <div class="AuctionGraph-price">
+                                <!-- react-text: 507 -->Started at
+                                <!-- /react-text -->
+                                <!-- react-text: 508 -->
+                                <!-- /react-text -->
+                                <span class="AuctionGraph-price-fee" id="start_price">
+                                  <em>Ξ</em>
+                                </span>
+                              </div>
+                              <div class="AuctionGraph-price">
+                                <!-- react-text: 514 -->Ends at
+                                <!-- /react-text -->
+                                <!-- react-text: 515 -->
+                                <!-- /react-text -->
+                                <span class="AuctionGraph-price-fee" id="end_price">
+                                  <em>Ξ</em>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="KittySection">
+                  <h2 class="KittySection-heading">Bio</h2>
+                  <div class="KittySection-content">
+                    <div class="KittyDescription">
+                      <p id="kitty_bio"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="KittySection">
+                  <h2 class="KittySection-heading">Cattributes</h2>
+                  <div class="KittySection-content">
+                    <div class="Kitty-attributes">
+                      <div class="ListAttributes" id="listAttributes"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="KittySection">
+                  <h2 class="KittySection-heading">Parents</h2>
+                  <div class="KittySection-content">
+                    <div class="Kitty-parents">
+                      <div class="KittiesList">
+                        <div class="KittiesList-items">
+                          <p>That's a secret!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- react-empty: 591 -->
+                <div class="ReportPage">
+                  <button class="ReportPage-button">Report Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="Footer">
+        <div class="Container Container--lg">
+          <div class="Footer-primary">
+            <div class="Footer-nav Footer-nav--primary">
+              <ul class="Footer-nav-items">
+                <li class="Footer-nav-item">
+                  <a class="Footer-nav-link Footer-nav-link--help" aria-current="false" href="https://www.cryptokitties.co/help">Help &amp; Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body><div></div></html>

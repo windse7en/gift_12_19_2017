@@ -1,0 +1,6 @@
+.InputButtons-input[type=text] {
+    --border-radius: .5rem;
+    padding-right: 13.5rem;
+    color: #2a2825;
+    border-color: #e7e6e4;
+}
