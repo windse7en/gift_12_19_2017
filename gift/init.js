@@ -34,7 +34,7 @@ $(function(){
     function attributeHtml(attr) {
         return '<a class="ListAttributes-item" aria-current="false" href="#">' + attr + '</a>';
     }
-    
+
     function ajaxLoad(url) {
         var data = {};
         var request = $.ajax({

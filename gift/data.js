@@ -3,7 +3,7 @@ function printWords() {
 }
 
 var firstOne = {
-    "id": 10,
+    "id": 166371,
     "name": "棉花糖",
     "generation": 1017,
     "image_url": "./gift/mianhuatang.jpg",
@@ -85,7 +85,7 @@ var firstOne = {
 };
 
 var myOwnKitties = {
-    "10": firstOne
+    "166371": firstOne
 };
 
-var idList = ["10"];
+var idList = ["166371"];
