@@ -7,16 +7,16 @@ $(function(){
         var kittyOwnerName = data["owner"]["nickname"];
         var kittyBio = data["bio"];
         var attrList = data["cattributes"];
-        var currentPrice = parseFloat(data["auction"]["current_price"]) / 1000000000000000000;
-        var startPrice = parseFloat(data["auction"]["start_price"]) / 1000000000000000000;
-        var endPrice = parseFloat(data["auction"]["end_price"]) / 1000000000000000000;
+        var currentPrice = isNaN(parseFloat(data["auction"]["current_price"])) ? data["auction"]["current_price"] : (parseFloat(data["auction"]["current_price"]) / 1000000000000000000);
+        var startPrice = isNaN(parseFloat(data["auction"]["start_price"])) ? data["auction"]["start_price"] : parseFloat(data["auction"]["start_price"]) / 1000000000000000000;
+        var endPrice = isNaN(parseFloat(data["auction"]["end_price"])) ? data["auction"]["end_price"] : parseFloat(data["auction"]["end_price"]) / 1000000000000000000;
 
         $("#kittyImage").attr("src", imageUrl);
         $("#kitty_name1").text(kittyName);
         $("#kitty_name2").text("Kitty " + kittyId);
         $("#kitty_gen").text("Gen " + kittyGen);
         $("#kitty_onwer").text(kittyOwnerName);
-        $("#kitty_bio").text(kittyBio);
+        $("#kitty_bio")[0].innerHTML = "<p>" + kittyBio + "</p>";
         $("#kitty_current_price").text("" + currentPrice);
         $("#kitty_for_sale").text("" + currentPrice);
         $("#start_price").text("" + startPrice);
