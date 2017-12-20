@@ -32,7 +32,7 @@ $(function(){
     }
 
     function attributeHtml(attr) {
-        return '<a class="ListAttributes-item" aria-current="false" href="https://www.cryptokitties.co/marketplace/all?search=royalpurple">' + attr + '</a>';
+        return '<a class="ListAttributes-item" aria-current="false" href="#">' + attr + '</a>';
     }
     
     function ajaxLoad(url) {
@@ -62,7 +62,6 @@ $(function(){
     });
 
     initWithNumber("10");
+    printWords();
 
-    // add love words
-    console.log("Hello");
 });
